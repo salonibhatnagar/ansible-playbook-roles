@@ -1,0 +1,8 @@
+---
+- name: install nginx
+  package:
+    #this module autmatically identify the os and run the installation command accoring to your os
+    name: nginx
+    state: latest #
+        #state: present if nginx:4.2 version if there is new version of nginx:4.3
+        #state: absent

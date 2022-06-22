@@ -1,0 +1,10 @@
+---
+# tasks file for nginx
+- import_tasks: epelRedhat.yml
+- import_tasks: patchinstallRedhat.yml
+- import_tasks: patchRedhat.yml
+- import_tasks: ngnixinstall.yml
+- import_tasks: ngnixConfigure.yml
+- import_tasks: addPort.yml
+- import_tasks: jijaTemp.yml
+- import_tasks: nginxRestart.yml

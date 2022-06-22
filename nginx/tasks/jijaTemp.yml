@@ -1,0 +1,6 @@
+---
+- name: we will create push our own file using jinja 2 template
+  template:
+    src: templates/index.html.j2
+    dest: /usr/share/nginx/html/index.html
+    mode: 0644

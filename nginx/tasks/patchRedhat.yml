@@ -1,0 +1,6 @@
+---
+- name: patch the nginx.conf include site-availability , default server entry
+  patch: #this patch module has root privilage
+    src: files/nginx.conf.redhat.patch
+    dest: /etc/nginx/nginx.conf
+  when: ansible_distribution == "RedHat"

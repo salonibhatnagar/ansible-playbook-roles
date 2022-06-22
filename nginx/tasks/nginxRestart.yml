@@ -1,0 +1,7 @@
+---
+- name: restart nginx server
+  service:
+      #systemctl restart httpd service
+    name: nginx
+    state: restarted
+  notify: check http service
